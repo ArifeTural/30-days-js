@@ -118,12 +118,12 @@ console.log(deneme(4));
 
 //? Rastgele bir rgb renk numarası oluşturan fonksiyon yazın.
 
-function rgbfks() {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r},${g},${b})`;
-  }
-  console.log(rgbfks());
+let i = Math.floor (Math.random() * 256);
+let j = Math.floor (Math.random() * 256);
+let k = Math.floor (Math.random() * 256);
+const rgb = function(i,j,k) {
+    return `rgb(${i},${j},${k})`
+}
+console.log(rgb(i,j,k));
 
 
