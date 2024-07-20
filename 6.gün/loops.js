@@ -76,10 +76,31 @@ for (let i = 2; i <= 100; i++) {
     }
   }
 //? 10- 0 ile 100 arasındaki tüm sayıların toplamını ekrana yazıdırn
+let sum = 0
+for(let t = 0; t <= 100; t++){
+  sum += t
 
+}
+console.log(sum);
 
 //? 11- 0 ile 100 arasındaki tek ve çift sayıların toplamını bulun
+let tek = 0
+let cift =0
+for(let g = 0; g <=100; g++){
+  if( g % 2 === 0){
+    cift += g
+  }
+ 
+else{
+  tek += g
+}
+ }
+ console.log(cift);
+ console.log(tek);
 
+
+ console.log(`tek ve çift sayıların toplamı: ${cift} + ${tek} = ${cift + tek}`);
+ 
 //!SEVİYE 2
 
 //?Herhangi bir sayıda rastgele id numarası atayan bir fonksiyon yazın
@@ -117,13 +138,64 @@ console.log(deneme(4));
 
 
 //? Rastgele bir rgb renk numarası oluşturan fonksiyon yazın.
+let p = Math.ceil (Math.random() * 255);
+let j = Math.ceil (Math.random() * 255);
+let k = Math.ceil (Math.random() * 255);
 
-let i = Math.floor (Math.random() * 256);
-let j = Math.floor (Math.random() * 256);
-let k = Math.floor (Math.random() * 256);
-const rgb = function(i,j,k) {
-    return `rgb(${i},${j},${k})`
+const rgb = function(p,j,k) {
+  return`rgb(${p},${j},${k})`
 }
-console.log(rgb(i,j,k));
+console.log(rgb(p,j,k));
+
+//?Yukarıdaki array'i kullanarak rastgele yeni bir dizi oluşturun.
+let ulke = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+
+//?Yukarıdaki array'i kullanarak ülkelerin harf uzunluklarını içeren bir dizi olşturun'.
+let ulkeUzunluk = [ulke[0].length, ulke[1].length, ulke[2].length, ulke[3].length,ulke[4].length, ulke[5].length, ulke[6].length, ulke[7].length, ulke[8].length, ulke[9].length, ulke[10].length,]
+
+
+console.log(ulkeUzunluk);
+
+//?Yukarıdaki diziyi kullanarak aşağıdaki diziyi oluşturun:
+
+// for(let i = 0; i<= ulke.length; i++){
+
+//   console.log(`[${ulke[i]}, ${ulke[i].slice(0,3)} ,${ulke[i].length}]`);
+  
+//   }
+
+
+//?Yukarıdaki ülkeler dizisinde "land" sözcüğünü içeren bir ülke veya ülke olup olmadığını kontrol edin. "land" içeren ülkeler varsa bunu dizi halinde yazdırın.
+
+let landIceriyor = ulke.filter(country => country.includes("LAND"));
+console.log(landIceriyor);
+
+//?Yukarıdaki ülkeler dizisinde "ia" sözcüğünü içeren bir ülke veya ülke olup olmadığını kontrol edin. "ia" içeren ülkeler varsa bunu dizi halinde yazdırın..
+
+
+let aiIceriyor = ulke.filter(Aİulke => Aİulke.includes("IA"));
+console.log(aiIceriyor);
+
+//?Yukarıdaki ülkeler dizisini kullanarak en fazla karakter içeren ülkeyi bulun.
+
+let enUzunUlke = ulke.reduce((enUzun, current) => {
+    // Eğer current'in uzunluğu enUzun'un uzunluğundan büyükse, current'i döndür.
+    // Aksi takdirde, enUzun'u döndür.
+    return current.length > enUzun.length ? current : enUzun;
+}, ""); // "" başlangıç değeridir.
+
+console.log(enUzunUlke);
+
+//?Yukarıdaki ülkeler dizisini kullanarak, yalnızca 5 karakter içeren ülkeyi bulun.
+
+
+let bess = ulke.filter(cont => cont.length === 5);
+console.log(bess);
+
+
+//! seviye 3
+
+
+
 
 
