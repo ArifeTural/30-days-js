@@ -126,12 +126,12 @@ a > b ? console.log("a bden büyüktür") : console.log("b a dan büyüktür");
 
 //? 2- Mevsimin Sonbahar, Kış, İlkbahar veya Yaz olup olmadığını kontrol edin. Değerler :
 
-//Eylül, Ekim veya Kasım, mevsim sonbahardır.
-//Aralık, Ocak veya Şubat, mevsim kıştır.
-//Mart, Nisan veya Mayıs mevsimi bahardır
-//Haziran, Temmuz veya Ağustos, mevsim yazdır
+// Eylül, Ekim veya Kasım, mevsim sonbahardır.
+// Aralık, Ocak veya Şubat, mevsim kıştır.
+// Mart, Nisan veya Mayıs mevsimi bahardır
+// Haziran, Temmuz veya Ağustos, mevsim yazdır
 
-// let ay = prompt("bulunduğunuz ayı giriniz:");
+let ay = prompt("bulunduğunuz ayı giriniz:");
 
 // switch(ay){
 //     case "aralık":
