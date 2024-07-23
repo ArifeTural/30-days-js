@@ -483,5 +483,23 @@ console.log(userIdGenerator(15))
 console.log(userIdGenerator(20));
 
 
+
+//!SEVİYE 3
+
+//? 1-Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+
+//çooook uzun hiç uğraşamam şuan sonra bak!
+
+//?2-Write a function name rgbColorGenerator and it generates rgb colors.
+
+let p = Math.ceil (Math.random() * 255);
+let j = Math.ceil (Math.random() * 255);
+let k = Math.ceil (Math.random() * 255);
+
+const rgb = function(p,j,k) {
+  return`rgb(${p},${j},${k})`
+}
+console.log(rgb(p,j,k));
+
   
 
