@@ -369,7 +369,118 @@ function showDateTime() {
   console.log(sumOfNumbers(100));
   
 
+//?11- Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
 
+function tek (n) {
+  let sum = 0;
+  for(let i = 0; i <= n; i++){
+   if(i % 2 === 1){
+    sum += i
+    
+
+   }
+  }
+  return sum;
+ 
+}
+
+console.log(tek(5));
+console.log(tek(67));
+console.log(tek(20));
+
+
+
+//? 12- Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+
+function cift (x) {
+  let sayi = 0;
+  for(let i = 0; i <= x; i++){
+   if(i % 2 === 0){
+    sayi += i
+    
+
+   }
+  }
+  return sayi;
+ 
+}
+console.log(cift(20));
+console.log(cift(78));
+console.log(cift(9));
+
+
+//?13-Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+function evensAndOdds(n) {
+  let evens = 0;
+  let odds = 0;
+  
+  for (let i = 0; i <= n; i++) {
+      if (i % 2 === 0) {
+          evens++;
+      } else {
+          odds++;
+      }
+  }
+  
+  return { evens: evens, odds: odds };
+}
+
+// Örnek kullanım
+console.log(evensAndOdds(100));  
+console.log(evensAndOdds(15));
+
+
+//? 14-Write a function which takes any number of arguments and return the sum of the arguments
+
+function herhangi (){
+  let toplam = 0 
+  for(let i = 0; i < arguments.length; i++){
+  toplam += arguments[i]
+  }
+  return toplam;
+
+
+}
+
+console.log(herhangi(20,12,45));
+
+//? 15-Write a function which generates a randomUserIp.
+
+//? 16-Write a function which generates a randomMacAddress
+
+//? 17- Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+
+
+function onAltılık (n){
+  let hexadecimal = "0123456789abcdef" 
+  let hex = ""
+  for(let i=0; i < n ; i++){
+    hex += hexadecimal.charAt(Math.floor(Math.random() * hexadecimal.length))
+  }
+  return hex;
+}
+console.log(onAltılık(9));
+console.log(onAltılık(5));
+console.log(onAltılık(11));
+
+//? 18- Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+
+function userIdGenerator(length) {
+ 
+  let tanım = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+  let random = '';
+  for (let i = 0; i < length; i++) {
+      random += tanım.charAt(Math.floor(Math.random() * tanım.length));
+  }
+
+  return random;
+};
+
+console.log(userIdGenerator(4))
+console.log(userIdGenerator(15))
+console.log(userIdGenerator(20));
 
 
   
